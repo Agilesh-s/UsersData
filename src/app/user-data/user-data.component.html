@@ -1,0 +1,40 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row">
+                <div *ngFor = "let i of usersData.users" class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="card">
+                        <img src="{{i.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">FIRSTNAME: {{i.firstName}}</p>
+                          <p class="card-text">LASTNAME: {{i.lastName}}</p>
+                          <p class="card-text">MAIDENNAME: {{i.maidenName}}</p>
+                          <p class="card-text">AGE: {{i.age}}</p>
+                          <p class="card-text">GENDER: {{i.gender}}</p>
+                          <p class="card-text">EMAIL: {{i.email}}</p>
+                          <p class="card-text">PHONE:{{i.phone}}</p>
+                          <p class="card-text">USERNAME: {{i.username}}</p>
+                          <p class="card-text">PASSWORD: {{i.password}}</p>
+                          <p class="card-text">BIRTHDATE: {{i.birthDate}}</p>
+                          <p class="card-text">BLOODGROUP:{{i.bloodGroup}}</p>
+                          <p class="card-text">HEIGHT: {{i.height}}</p>
+                          <p class="card-text">WEIGHT: {{i.weight}}</p>
+                          <p class="card-text">EYECOLOR: {{i.eyeColor}}</p>
+                          <p class="card-text">HAIR: {{i.hair}}</p>
+                          <p class="card-text">DOMAIN: {{i.domain}}</p>
+                          <p class="card-text">IP: {{i.ip}}</p>
+                          <p class="card-text">ADDRESS: {{i.address}}</p>
+                          <p class="card-text">MAC ADDRESS:{{i.macAddress}}</p>
+                          <p class="card-text">BANK: {{i.bank}}</p>
+                          <p class="card-text">COMPANY: {{i.company}}</p>
+                          <p class="card-text">USERAGENT: {{i.userAgent}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
